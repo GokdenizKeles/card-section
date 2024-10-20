@@ -1,0 +1,286 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Manrope", sans-serif;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 375px;
+ margin: auto;
+}
+.container-inner {
+   padding-inline: 25px; 
+height: 400px; 
+border-radius: 0px 0px 0px 191.5px;
+text-align: center;
+padding-top: 89px;
+background:  #F1F5FE url("../img/elips.png") no-repeat center 66px;
+
+}
+.container-inner h4 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27.32px;
+  padding-bottom: 8px;
+  
+  
+}
+.container-inner p {
+font-size: 13px;
+font-weight: 600;
+line-height: 23px;
+color: #848EAD;
+
+}
+.section {
+ margin-inline: 7px;
+ 
+}
+.sections {
+  position: relative;
+}
+.section-2 {
+  padding-inline: 25px;
+   text-align: center;
+   background: #FFFFFF;
+   box-shadow: 0px 20px 30px -5px #7F89B927;
+   border-radius: 8px;
+   position: absolute;
+   margin-inline: 24px;
+   right: 0;
+   left: 0;
+   bottom: -168px;
+   padding-top: 34px;
+   padding-bottom: 32px;
+   
+}
+
+
+.section-2 h6 {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16.39px;
+  letter-spacing: 1.7142857313156128px;
+  color: #848EAD;
+   
+}
+.section-2 span {
+font-size: 32px;
+font-weight: 800;
+line-height: 43.71px;
+letter-spacing: -0.800000011920929px;
+color: #293356;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.section-2 span span {
+font-size: 14px;
+font-weight: 600;
+line-height: 19.12px;
+color: #848EAD;
+
+}
+.section-3 {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 24px;
+ 
+  
+}
+.section-3 p {
+font-size: 11px;
+font-weight: 600;
+line-height: 16.39px;
+color: #848EAD;
+}
+.section-3 .discount-btn {
+font-size: 10px;
+font-weight: 800;
+line-height: 13.66px;
+background: #FEEDE8;
+text-decoration: none;
+color: #FF8D68;
+border-radius: 10px;
+padding-top: 2px;
+padding-inline: 8px;
+
+
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px; 
+  height: 24px; 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px; 
+  height: 16px; 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 16px; 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;  
+  width: 12px;   
+  left: 2px;     
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  
+}
+
+
+input:checked + .slider {
+  background: #7AEADF;
+
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px); 
+}
+.section-4 {
+ border-top: 1px solid #ECF0FB;
+ 
+}
+
+.nav {
+  margin-top: 24px;
+}
+.section-4 li {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.39px;
+  color: #848EAD;
+ background: url("../img/confirm-icon.svg")  no-repeat 30px ;
+}
+.btn {
+font-size: 12px;
+font-weight: 800;
+line-height: 16.39px;
+color: #BECDFF;
+padding: 12px 46px;
+background: #293356;
+display: inline-block;
+border-radius: 20px;
+margin-top: 32px;
+
+}
+@media (width > 375px) {
+   
+  .container {
+    max-width: 1280px;
+  }
+  .section-2 {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   width: 540px;
+   margin-inline: auto;
+   bottom: -106px;
+   }
+   .section-2 input {
+    grid-row: 2;
+    grid-column: 2 span;
+  }
+  .section-3 {
+    grid-column: 2 span;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 16px;
+  }
+  .section-4 {
+    grid-column: 2 span;
+    display: flex;
+    justify-content: space-around;
+  }
+  .section-4 li {
+    background: url("../img/confirm-icon.svg")  no-repeat 1px  center;
+     padding-left: 11px;
+  }
+ .btn:hover {
+     color: #ffff;
+  }
+}
